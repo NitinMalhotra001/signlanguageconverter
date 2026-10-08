@@ -117,6 +117,7 @@ const CameraPage = () => {
       interval = setInterval(simulateLetterDetection, 2000);
     }
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isCameraActive, isRecording, cameraMode, currentStep, practiceWord]);
 
   const videoConstraints = {

@@ -267,6 +267,7 @@ const SignToText = () => {
       }
       if (handsRef.current) handsRef.current.close();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const startCamera = async () => {
